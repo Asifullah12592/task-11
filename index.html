@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-11</title>
+</head>
+
+<body>
+    <h1>Assignment-11</h1>
+    <script>
+        // Assignment - 11 === 1
+        //=====1111111
+        var firstName = prompt("Enter your first name")
+        var lasttName = prompt("Enter your last name")
+        var fullNaNmame = firstName + "  " + lasttName;
+        document.write("<b>(1):</b><br>" + fullNaNmame)
+
+        // // ===2
+        var mobileName = prompt("Enter your favorite model")
+        len = mobileName.length
+        // document.write(len);
+        document.write("<b><br><br>(2):</b><br>" + "My Favorite Phone is " + "<b>" + mobileName + "</b>" + " Lenght of String " + "<b>" + len + "</b>")
+
+        // //=====33333
+
+        var pak = "Pakistan"
+
+        leng = pak.indexOf("n")
+        document.write("<b><br><br>(3):</b><br>" + "String :" + "<b>" + pak + "</b>" + "<br>Index of n :" + "<b>" + leng + "</b>")
+
+
+        // //====44444444
+        var text = "Hello World"
+        var lastInd = text.lastIndexOf("l")
+        document.write("<b><br><br>(4):</b><br>" + "String :" + "<b>" + text + "</b>" + "<br>Last Index of ' l ' " + "<b> : " + lastInd + "</b>")
+
+
+        // //====55555
+
+        var pak = "Pakistan"
+        char = pak.charAt(3)
+        document.write("<b><br><br>(5):</b><br>" + "String :" + "<b>" + pak + "</b>" + "<br>Charater oat index -3 :" + "<b>" + char + "</b>")
+
+        // //===66666
+
+        var firstName = prompt("Enter your first name")
+        var lasttName = prompt("Enter your last name")
+        var fullNaNmame = firstName.concat(lasttName);
+        document.write("<b>(6):</b><br> " + fullNaNmame)
+
+
+
+        // //=====777777
+
+        var city = "Hayderabad"
+        var repl = city.slice(0, 6)
+        var sli = repl = "islam" + city.slice(6)
+        document.write("<b>(5 :) Logic :</b><br>" + repl)
+        var city = "Hayderabad"
+        var rep = city.replace("Hayder", "islam")
+        // document.write(rep)
+        document.write("<b><br><br>(5):<u>Methud</u></b><br>" + "City :" + "<b>" + city + "</b>" + "<br>After Replacement :" + "<b>" + rep + "</b>")
+
+        // //======88888
+
+        var massge = "Ali and Sami are best friends. They play criket and football together"
+        var repWord = massge.replaceAll("and", "&")
+        document.write(repWord)
+
+        var massge1 = "Ali and Sami are best friends. They play criket and football together"
+        var repALL = "&"
+        for (var i = 0; i < massge1.length; i++) {
+            var repla = massge1.slice(i, i + 3)
+            if (repla == "and") {
+                word = massge1.slice(0, i) + repALL + massge1.slice(i + 3)
+                document.write(word)
+            }
+        }
+
+        // //===999999
+
+        var value = 472
+
+        var type = value.toString()
+        document.write("<br>(9):<br><b>Value :</b>" + value + "<br><b>Type :</b>" + typeof type)
+        var value1 = 472
+        var type1 = typeof value1
+        // document.write(typeof value1)
+        document.write("<br><br><br><b>Value :</b>" + value1 + "<br><b>Type :</b>" + type1)
+
+        // //======10,10,10,10,10
+
+
+        var input = prompt("Enter your Value for chang into upper case")
+        var upperCase = input.toLocaleUpperCase()
+        document.write("<br><br>(10):<br><b>Value :</b>" + input + "<br><b>After Changing case :</b>" + upperCase)
+
+
+        // //====11,11,11,11,11
+        var java = "javascript"
+        var a = java.slice(0, 1).toUpperCase()
+        var b = a + java.slice(1)
+        document.write("(11) - 1 :Methud <br> User input : " + java + "<br> Titel Case : " + b)
+
+        var java = "javascript"
+        for (var i = 0; i < java.length; i++) {
+            var c = java[i].slice(i, i + 1).toUpperCase()
+            var d = c + java.slice(1)
+            document.write("<br><br>(11) - 2 :Logic<br> User input : " + java + "<br> Titel Case : " + d)
+            break
+        }
+
+        // //===12,12,12,12,12
+
+        var num = 35.36;
+        var num1 = num.toString()
+        var num2 = num1.replace(".", "")
+        document.write("<br><br>(12) :<br> Number: " + num + " <br>Result: " + num2)
+
+        // //====13,13,13,13
+        // //    ?
+        // //    ?
+        // //    ?
+        // //    ?
+
+
+        // //====14,14,14,14,14
+
+        var arr = ["cake", "apple pie", "cookie", "chips", "patties"]
+        var b = prompt("Welcome to ABC Bakery. What do you want to oder sir/mam")
+        var match = "No"
+        for (var i = 0; i < arr.length; i++) {
+            // document.write(a[i]+",")
+            if (b == arr[i]) {
+                var match = "yes"
+            }
+
+        }
+        if (match == "yes") {
+            document.write("<br><br>(14) :<br>" + b + " is <b>available</b> at index " + arr.indexOf(b) + " in our bakery")
+        } else {
+            document.write("<br><br>(14) :<br> We are sorry . pastry is <b>not available</b>  in our bakery ")
+        }
+
+
+
+
+        // //15,15,15,15,15
+
+        var password = prompt("Please enter your password:");
+
+        var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+        var flags = true;
+
+        if (password.length >= 6) {
+            for (let i = 0; i < password.length; i++) {
+
+                if (password.includes(nums[i]) && password[0] != nums[i]) {
+                    flags = true;
+                    //   document.write(flags)
+                    break;
+                }
+                else {
+                    flags = false;
+                    //break;
+                }
+            }
+
+            if (flags == true) {
+                document.write("<b><br><br>(15):</b><br> : Valid Password<br><br>");
+            }
+            else {
+                document.write("<b><br><br>(15):</b><br> : Invalid Password! Password must contain alphabets and numbers, but , should be started alphabets<br><br>");
+            }
+        }
+
+        else {
+            document.write("<b><br><br>(15):</b><br> : Minimum 6 characters are required<br><br>");
+        }
+
+
+
+        // //========16 16 16 16 
+        document.write("<b><br><br>(16):</b><br><br>")
+        var text_1 = "University of Karachi"
+        var sp = text_1.split("")
+        // document.write(sp)
+        for (var i = 0; i < sp.length; i++) {
+
+            document.write(sp[i], "<br>")
+
+        }
+
+
+        // //=====171717171717
+        var pak = "Pakistan"
+
+        leng = pak.slice(-1)
+        document.write("<b><br><br>(17):</b><br>" + "User Input :" + "<b>" + pak + "</b>" + "<br>Last Character Of Input :" + "<b>" + leng + "</b>")
+
+
+        //=====18 18 18 18 18
+
+
+        var fox = "the quick brown fox jumps over the lazy dog";
+        var word = "the"
+
+        var find = fox.matchAll(word);
+        var count = Array.from(find).length;
+        // console.log(count)
+
+        document.write("Text : " + fox + "<br> There are <b>" + count + "</b> occurrence(s) of the word '<b>" + word + "</b>'");
+
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
